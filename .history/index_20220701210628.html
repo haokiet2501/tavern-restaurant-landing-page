@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link
+        rel="stylesheet"
+        href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="sass/css/styles.css">
+    <title>Restaurant Landing Page - Tavern</title>
+</head>
+<body>
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="#home" class="nav__logo">Tav<span>ern</span></a>
+
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="#home" class="nav__link active-link">Home</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#home" class="nav__link">About Us</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#menu" class="nav__link">Menu</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#review" class="nav__link">Review</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#contact" class="nav__link">Contact Us</a>
+                    </li>
+
+                    <div class="nav__mobile">
+                        <a href="#login" class="nav__login">Login</a>
+                        <a href="#signup" class="nav__signup">Sign Up</a>
+                    </div>
+                </ul>
+
+                <i class="ri-close-line nav__close" id="nav-close"></i>
+            </div>
+
+            <div class="nav__toggle" id="nav-toggle">
+                <i class="ri-list-settings-line"></i>
+            </div>
+        </nav>
+    </header>
+
+    <main class="main">
+        <section class="home section" id="home">
+            <img src="imgs/Base.png" class="home__img" alt="">
+            <div class="home__container container grid">
+                <div class="home__data">
+                    <div class="home__heading">
+                        <h2>Giving your <br> Hunger a new <br> Option.</h2>
+                    </div>
+                    <div class="home__subtext">
+                        Want a delicious meal, but no time we will deliver it hot andyummy to your doorstep.
+                    </div>
+                    <div class="home__button">
+                        <div class="home__order">
+                            <button class="home__order-btn">Order Food</button>
+                        </div>
+                        <div class="home__learnmore">
+                            <a href="#" class="home__event">Lear More</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="home__images">
+                    <img src="imgs/home.png" class="item1" alt="">
+                    <div class="home__images-two">
+                        <img src="imgs/home2.png" class="item2" alt="">
+                        <img src="imgs/home3.png" class="item2" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="about section">
+            <div class="about__container container grid">
+                <div class="section__title">
+                    <div class="about__title">
+                        <h2 class="about__heading">
+                            How its work
+                        </h2>
+                        <p class="about__text">
+                            Driving improved quality and productivity. Reducing your costs. Maximizing the value of your.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="about__list">
+                    <div class="about__card">
+                        
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <script src="js/scrollreveal.min.js"></script>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>

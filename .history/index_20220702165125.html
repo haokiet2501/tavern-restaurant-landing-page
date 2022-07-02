@@ -1,0 +1,633 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link
+        rel="stylesheet"
+        href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="sass/css/styles.css">
+    <title>Restaurant Landing Page - Tavern</title>
+</head>
+<body>
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="#home" class="nav__logo">Tav<span>ern</span></a>
+
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="#home" class="nav__link active-link">Home</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#about" class="nav__link">About Us</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#menu" class="nav__link">Menu</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#testimonial" class="nav__link">Review</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#footer" class="nav__link">Contact Us</a>
+                    </li>
+
+                    <div class="nav__mobile">
+                        <a href="#login" class="nav__login">Login</a>
+                        <a href="#signup" class="nav__signup">Sign Up</a>
+                    </div>
+                </ul>
+
+                <i class="ri-close-line nav__close" id="nav-close"></i>
+            </div>
+
+            <div class="nav__toggle" id="nav-toggle">
+                <i class="ri-list-settings-line"></i>
+            </div>
+        </nav>
+    </header>
+
+    <main class="main">
+        <section class="home section" id="home">
+            <img src="imgs/Base.png" class="home__img" alt="">
+            <div class="home__container container grid">
+                <div class="home__data">
+                    <div class="home__heading">
+                        <h2>Giving your <br> Hunger a new <br> Option.</h2>
+                    </div>
+                    <div class="home__subtext">
+                        Want a delicious meal, but no time we will deliver it hot andyummy to your doorstep.
+                    </div>
+                    <div class="home__button">
+                        <div class="home__order">
+                            <button class="home__order-btn">Order Food</button>
+                        </div>
+                        <div class="home__learnmore">
+                            <a href="#" class="home__event">Lear More</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="home__images">
+                    <img src="imgs/home.png" alt="">
+                    <div class="home__images-two">
+                        <img src="imgs/home2.png" alt="">
+                        <img src="imgs/home3.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="about section" id="about">
+            <div class="about__container container grid">
+                <div class="section__title">
+                    <div class="about__title">
+                        <h2 class="about__heading">
+                            How its work
+                        </h2>
+                        <p class="about__text">
+                            Driving improved quality and productivity. Reducing your costs. Maximizing the value of your.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="about__list">
+                    <div class="about__card">
+                        <div class="about__icon">
+                            <svg width="42" height="30" viewBox="0 0 42 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M37.8636 14.3181H3.77274C1.88995 14.3181 0.363647 15.8444 0.363647 17.7272V19.0908C0.363647 20.9736 1.88995 22.4999 3.77274 22.4999H37.8636C39.7464 22.4999 41.2727 20.9736 41.2727 19.0908V17.7272C41.2727 15.8444 39.7464 14.3181 37.8636 14.3181Z" fill="white"/>
+                                <path d="M2.40918 25.9091C2.40918 26.9941 2.84019 28.0346 3.60738 28.8018C4.37457 29.569 5.41511 30 6.50009 30H35.1365C36.2214 30 37.262 29.569 38.0292 28.8018C38.7964 28.0346 39.2274 26.9941 39.2274 25.9091V25.2273H2.40918V25.9091ZM39.2274 10.2273C39.2274 7.51483 38.1499 4.91348 36.2319 2.9955C34.3139 1.07751 31.7125 0 29.0001 0H12.6365C9.92401 0 7.32266 1.07751 5.40468 2.9955C3.48669 4.91348 2.40918 7.51483 2.40918 10.2273V11.5909H39.2274V10.2273ZM11.2728 7.5C11.0031 7.5 10.7395 7.42002 10.5152 7.27019C10.291 7.12035 10.1162 6.90738 10.013 6.65821C9.90977 6.40903 9.88277 6.13485 9.93538 5.87033C9.988 5.60581 10.1179 5.36284 10.3086 5.17213C10.4993 4.98142 10.7423 4.85155 11.0068 4.79893C11.2713 4.74631 11.5455 4.77332 11.7947 4.87653C12.0438 4.97974 12.2568 5.15452 12.4066 5.37877C12.5565 5.60302 12.6365 5.86666 12.6365 6.13636C12.6365 6.49802 12.4928 6.84487 12.2371 7.1006C11.9813 7.35633 11.6345 7.5 11.2728 7.5ZM16.7274 8.86364C16.4577 8.86364 16.194 8.78366 15.9698 8.63382C15.7455 8.48398 15.5707 8.27101 15.4675 8.02184C15.3643 7.77267 15.3373 7.49849 15.3899 7.23397C15.4425 6.96945 15.5724 6.72647 15.7631 6.53576C15.9538 6.34506 16.1968 6.21518 16.4613 6.16257C16.7259 6.10995 17 6.13695 17.2492 6.24016C17.4984 6.34337 17.7113 6.51816 17.8612 6.7424C18.011 6.96665 18.091 7.2303 18.091 7.5C18.091 7.86166 17.9473 8.2085 17.6916 8.46424C17.4359 8.71997 17.089 8.86364 16.7274 8.86364ZM20.8183 6.13636C20.5486 6.13636 20.2849 6.05639 20.0607 5.90655C19.8364 5.75671 19.6616 5.54374 19.5584 5.29457C19.4552 5.0454 19.4282 4.77121 19.4808 4.5067C19.5335 4.24218 19.6633 3.9992 19.854 3.80849C20.0447 3.61778 20.2877 3.48791 20.5522 3.43529C20.8168 3.38268 21.0909 3.40968 21.3401 3.51289C21.5893 3.6161 21.8023 3.79088 21.9521 4.01513C22.1019 4.23938 22.1819 4.50303 22.1819 4.77273C22.1819 5.13439 22.0382 5.48123 21.7825 5.73696C21.5268 5.99269 21.1799 6.13636 20.8183 6.13636ZM26.2728 8.86364C26.0031 8.86364 25.7395 8.78366 25.5152 8.63382C25.291 8.48398 25.1162 8.27101 25.013 8.02184C24.9098 7.77267 24.8828 7.49849 24.9354 7.23397C24.988 6.96945 25.1179 6.72647 25.3086 6.53576C25.4993 6.34506 25.7423 6.21518 26.0068 6.16257C26.2713 6.10995 26.5455 6.13695 26.7947 6.24016C27.0438 6.34337 27.2568 6.51816 27.4066 6.7424C27.5565 6.96665 27.6365 7.2303 27.6365 7.5C27.6365 7.86166 27.4928 8.2085 27.2371 8.46424C26.9813 8.71997 26.6345 8.86364 26.2728 8.86364ZM31.7274 7.5C31.4577 7.5 31.194 7.42002 30.9698 7.27019C30.7455 7.12035 30.5707 6.90738 30.4675 6.65821C30.3643 6.40903 30.3373 6.13485 30.3899 5.87033C30.4425 5.60581 30.5724 5.36284 30.7631 5.17213C30.9538 4.98142 31.1968 4.85155 31.4613 4.79893C31.7259 4.74631 32 4.77332 32.2492 4.87653C32.4984 4.97974 32.7113 5.15452 32.8612 5.37877C33.011 5.60302 33.091 5.86666 33.091 6.13636C33.091 6.49802 32.9473 6.84487 32.6916 7.1006C32.4359 7.35633 32.089 7.5 31.7274 7.5Z" fill="white"/>
+                            </svg>                               
+                        </div>
+                        <div class="about__category">
+                            Order Your Food
+                        </div>
+
+                        <div class="about__description">
+                            Order your food easily and we will receive your order as soon and will deliver it faster.
+                        </div>
+                    </div>
+                    <div class="about__card">
+                        <div class="about__icon">
+                            <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M22 14C20.4178 14 18.871 14.4692 17.5554 15.3482C16.2398 16.2273 15.2145 17.4767 14.609 18.9385C14.0035 20.4003 13.845 22.0089 14.1537 23.5607C14.4624 25.1126 15.2243 26.538 16.3431 27.6568C17.462 28.7757 18.8874 29.5376 20.4393 29.8463C21.9911 30.155 23.5997 29.9965 25.0615 29.391C26.5233 28.7855 27.7727 27.7601 28.6518 26.4446C29.5308 25.129 30 23.5822 30 22C30 19.8783 29.1571 17.8434 27.6569 16.3431C26.1566 14.8429 24.1217 14 22 14ZM26.25 20.7L21.55 26L18.3 22.75C18.1854 22.664 18.0906 22.5544 18.022 22.4287C17.9534 22.3029 17.9127 22.1638 17.9025 22.0209C17.8924 21.878 17.913 21.7345 17.9631 21.6003C18.0132 21.4661 18.0916 21.3442 18.1929 21.2429C18.2942 21.1416 18.4161 21.0632 18.5503 21.0131C18.6846 20.963 18.828 20.9424 18.9709 20.9525C19.1138 20.9627 19.2529 21.0034 19.3787 21.072C19.5044 21.1406 19.614 21.2354 19.7 21.35L21.45 23.1L24.75 19.4C24.8386 19.3015 24.9458 19.2214 25.0654 19.1644C25.185 19.1073 25.3146 19.0743 25.447 19.0674C25.5793 19.0604 25.7117 19.0796 25.8366 19.1238C25.9615 19.168 26.0765 19.2364 26.175 19.325C26.2735 19.4136 26.3536 19.5208 26.4106 19.6404C26.4677 19.76 26.5007 19.8896 26.5076 20.022C26.5146 20.1543 26.4954 20.2867 26.4512 20.4116C26.407 20.5365 26.3386 20.6515 26.25 20.75V20.7Z" fill="white"/>
+                                <path d="M19.2 0H13V6H23.2L19.2 0ZM11 0H4.8L0.8 6H11V0ZM22 12C22.6717 11.9997 23.3417 12.0667 24 12.2V8H0V24H12.2C11.9034 22.5469 11.9337 21.0461 12.2887 19.6061C12.6437 18.1662 13.3146 16.8233 14.2526 15.6746C15.1907 14.526 16.3725 13.6004 17.7125 12.9648C19.0524 12.3293 20.517 11.9997 22 12Z" fill="white"/>
+                            </svg>
+                                                            
+                        </div>
+                        <div class="about__category">
+                            Order Your Food
+                        </div>
+
+                        <div class="about__description">
+                            Order your food easily and we will receive your order as soon and will deliver it faster.
+                        </div>
+                    </div>
+                    <div class="about__card">
+                        <div class="about__icon">
+                            <svg width="31" height="30" viewBox="0 0 31 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M2.85104e-07 12.7869V29.5082C2.85104e-07 29.6386 0.0518151 29.7637 0.144046 29.8559C0.236277 29.9482 0.361369 30 0.491804 30H5.40984V6.29211L0.118033 12.4667C0.0417399 12.5559 -0.000126054 12.6695 2.85104e-07 12.7869ZM7.37705 30H12.2956V13.1936L7.37705 8.27556V30Z" fill="white"/>
+                                <path d="M14.2624 13.7705V30H30.0001C30.1305 30 30.2556 29.9482 30.3479 29.856C30.4401 29.7637 30.4919 29.6386 30.4919 29.5082V13.7705H14.2624ZM26.0657 20.6558H17.2132C16.9523 20.6558 16.7022 20.5521 16.5177 20.3677C16.3332 20.1832 16.2296 19.933 16.2296 19.6721C16.2296 19.4113 16.3332 19.1611 16.5177 18.9766C16.7022 18.7922 16.9523 18.6885 17.2132 18.6885H26.0657C26.3265 18.6885 26.5767 18.7922 26.7612 18.9766C26.9456 19.1611 27.0493 19.4113 27.0493 19.6721C27.0493 19.933 26.9456 20.1832 26.7612 20.3677C26.5767 20.5521 26.3265 20.6558 26.0657 20.6558Z" fill="white"/>
+                                <path d="M24.4714 5.58148C24.4253 5.52765 24.368 5.48444 24.3036 5.45481C24.2391 5.42518 24.1691 5.40984 24.0981 5.40984H24.0126V3.93443C24.0126 2.89095 23.5981 1.89021 22.8602 1.15237C22.1224 0.414519 21.1216 0 20.0781 0H11.2257C10.1822 0 9.18147 0.414519 8.44363 1.15237C7.70578 1.89021 7.29126 2.89095 7.29126 3.93443V5.40984L13.6847 11.8033H29.8031L24.4714 5.58148Z" fill="white"/>
+                            </svg>                        
+                        </div>
+                        <div class="about__category">
+                            Order Your Food
+                        </div>
+
+                        <div class="about__description">
+                            Order your food easily and we will receive your order as soon and will deliver it faster.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="menu section" id="menu">
+            <div class="menu__container container grid">
+                <div class="section__title">
+                    <h2 class="menu__title">
+                        Order Best Menu
+                    </h2>
+                    <p class="menu__text">
+                        Check out our best menu and order the best delicious <br> food that suit to you.
+                    </p>
+                </div>
+
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="menu__card">
+                                <img src="imgs/menu.png" alt="">
+
+                                <div class="menu__data">
+                                    <h3 class="menu__name">Chicken Vegan Bowl</h3>
+                                    <p class="menu__price">$ 18,00</p>
+
+                                    <div class="menu__layouts">
+                                        <div class="memu__time">
+                                            <p>Time:</p>
+                                            <p class="menu__time-minute">20 min</p>
+                                        </div>
+                                        <div class="menu__type">
+                                            <p>Type food</p>
+                                            <p class="menu__type-session">Dinner/lunch</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="menu__card">
+                                <img src="imgs/menu2.png" alt="">
+
+                                <div class="menu__data">
+                                    <h3 class="menu__name">Vegetable Route</h3>
+                                    <p class="menu__price">$ 11,00</p>
+
+                                    <div class="menu__layouts">
+                                        <div class="memu__time">
+                                            <p>Time:</p>
+                                            <p class="menu__time-minute">20 min</p>
+                                        </div>
+                                        <div class="menu__type">
+                                            <p>Type food</p>
+                                            <p class="menu__type-session">Dinner/lunch</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="menu__card">
+                                <img src="imgs/menu3.png" alt="">
+
+                                <div class="menu__data">
+                                    <h3 class="menu__name">Eggs Benedict Burger</h3>
+                                    <p class="menu__price">$ 14,50</p>
+
+                                    <div class="menu__layouts">
+                                        <div class="memu__time">
+                                            <p>Time:</p>
+                                            <p class="menu__time-minute">20 min</p>
+                                        </div>
+                                        <div class="menu__type">
+                                            <p>Type food</p>
+                                            <p class="menu__type-session">Dinner/lunch</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="menu__card">
+                                <img src="imgs/menu4.png" alt="">
+
+                                <div class="menu__data">
+                                    <h3 class="menu__name">Yummy Pizza</h3>
+                                    <p class="menu__price">$ 17,00</p>
+
+                                    <div class="menu__layouts">
+                                        <div class="memu__time">
+                                            <p>Time:</p>
+                                            <p class="menu__time-minute">20 min</p>
+                                        </div>
+                                        <div class="menu__type">
+                                            <p>Type food</p>
+                                            <p class="menu__type-session">Dinner/lunch</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="menu__card">
+                                <img src="imgs/menu.png" alt="">
+
+                                <div class="menu__data">
+                                    <h3 class="menu__name">Chicken Vegan Bowl</h3>
+                                    <p class="menu__price">$ 18,00</p>
+
+                                    <div class="menu__layouts">
+                                        <div class="memu__time">
+                                            <p>Time:</p>
+                                            <p class="menu__time-minute">20 min</p>
+                                        </div>
+                                        <div class="menu__type">
+                                            <p>Type food</p>
+                                            <p class="menu__type-session">Dinner/lunch</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="menu__card">
+                                <img src="imgs/menu2.png" alt="">
+
+                                <div class="menu__data">
+                                    <h3 class="menu__name">Vegetable Route</h3>
+                                    <p class="menu__price">$ 11,00</p>
+
+                                    <div class="menu__layouts">
+                                        <div class="memu__time">
+                                            <p>Time:</p>
+                                            <p class="menu__time-minute">20 min</p>
+                                        </div>
+                                        <div class="menu__type">
+                                            <p>Type food</p>
+                                            <p class="menu__type-session">Dinner/lunch</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="menu__card">
+                                <img src="imgs/menu3.png" alt="">
+
+                                <div class="menu__data">
+                                    <h3 class="menu__name">Eggs Benedict Burger</h3>
+                                    <p class="menu__price">$ 14,50</p>
+
+                                    <div class="menu__layouts">
+                                        <div class="menu__time">
+                                            <p>Time:</p>
+                                            <p class="menu__time-minute">20 min</p>
+                                        </div>
+                                        <div class="menu__type">
+                                            <p>Type food</p>
+                                            <p class="menu__type-session">Dinner/lunch</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="menu__card">
+                                <img src="imgs/menu4.png" alt="">
+
+                                <div class="menu__data">
+                                    <h3 class="menu__name">Yummy Pizza</h3>
+                                    <p class="menu__price">$ 17,00</p>
+
+                                    <div class="menu__layouts">
+                                        <div class="menu__time">
+                                            <p>Time:</p>
+                                            <p class="menu__time-minute">20 min</p>
+                                        </div>
+                                        <div class="menu__type">
+                                            <p>Type food</p>
+                                            <p class="menu__type-session">Dinner/lunch</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="testimonial section" id="testimonial">
+            <div class="testimonial__container">
+                <div class="swiper mySwiper2">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="testimonial__card">
+                                <div class="testimonial__man">
+                                    <img class="testimonial__img" src="imgs/pic-man-testimonial.png" alt="">
+                                </div>
+                                <div class="testimonial__data">
+                                    <div class="testimonial__author">
+                                        Kyle Mills
+                                    </div>
+                                    <div class="testimonial__position">
+                                        UI/UX Designer
+                                    </div>
+                                    <div class="testimonial__star">
+                                        <i class="ri-star-fill active"></i>
+                                        <i class="ri-star-fill active"></i>
+                                        <i class="ri-star-fill active"></i>
+                                        <i class="ri-star-fill active"></i>
+                                        <i class="ri-star-fill disable"></i>
+                                    </div>
+                                    <div class="testimonial__text">
+                                        “They are the best people. And this is the suitableplatform to ordering food online. I have enjoyed a lotto order with them. They are very helpful and fasterpeople.”
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="testimonial__card">
+                                <div class="testimonial__man">
+                                    <img class="testimonial__img" src="imgs/pic-man-testimonial.png" alt="">
+                                </div>
+                                <div class="testimonial__data">
+                                    <div class="testimonial__author">
+                                        Kyle Mills
+                                    </div>
+                                    <div class="testimonial__position">
+                                        Frontend Developer
+                                    </div>
+                                    <div class="testimonial__star">
+                                        <i class="ri-star-fill active"></i>
+                                        <i class="ri-star-fill active"></i>
+                                        <i class="ri-star-fill active"></i>
+                                        <i class="ri-star-fill active"></i>
+                                        <i class="ri-star-fill disable"></i>
+                                    </div>
+                                    <div class="testimonial__text">
+                                        “They are the best people. And this is the suitableplatform to ordering food online. I have enjoyed a lotto order with them. They are very helpful and fasterpeople.”
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="testimonial__card">
+                                <div class="testimonial__man">
+                                    <img class="testimonial__img" src="imgs/pic-man-testimonial.png" alt="">
+                                </div>
+                                <div class="testimonial__data">
+                                    <div class="testimonial__author">
+                                        Kyle Mills
+                                    </div>
+                                    <div class="testimonial__position">
+                                        Backend Developer
+                                    </div>
+                                    <div class="testimonial__star">
+                                        <i class="ri-star-fill active"></i>
+                                        <i class="ri-star-fill active"></i>
+                                        <i class="ri-star-fill active"></i>
+                                        <i class="ri-star-fill active"></i>
+                                        <i class="ri-star-fill disable"></i>
+                                    </div>
+                                    <div class="testimonial__text">
+                                        “They are the best people. And this is the suitableplatform to ordering food online. I have enjoyed a lotto order with them. They are very helpful and fasterpeople.”
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-container">
+                        <div class="swiper-button-prev swiper-icons">
+                            <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M0.941406 6.9996H15.0591M0.941406 6.9996L6.58847 1.35254M0.941406 6.9996L6.58847 12.6467" stroke="#ffffff" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                        <div class="swiper-button-next swiper-icons">
+                            <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M15.0586 6.9996H0.940946M15.0586 6.9996L9.41153 1.35254M15.0586 6.9996L9.41153 12.6467" stroke="#ffffff" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="cta section">
+            <div class="cta__container container grid">
+                <div class="cta__data">
+                    <p class="cta__down">
+                        Download Our App
+                    </p>
+                    <h3 class="cta__subtitle">
+                        Order Your Favourite Food through Our App
+                    </h3>
+                    <p class="cta__subtext">
+                        Our app gives you access to your favourite restaurants. <br> Get your food delivered right to you.
+                    </p>
+
+                    <div class="cta__button">
+                        <button class="btn__apple">
+                            <svg width="160" height="52" viewBox="0 0 160 52" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect width="159.475" height="51.9912" rx="10" fill="#161415"/>
+                                <path d="M104.218 25.0871V27.6927H102.585V29.4014H104.218V35.2073C104.218 37.1899 105.115 37.9829 107.372 37.9829C107.768 37.9829 108.146 37.9357 108.476 37.879V36.1892C108.193 36.2175 108.014 36.2364 107.702 36.2364C106.692 36.2364 106.248 35.7643 106.248 34.6881V29.4014H108.476V27.6927H106.248V25.0871H104.218Z" fill="white"/>
+                                <path d="M114.224 38.1245C117.226 38.1245 119.067 36.1136 119.067 32.7811C119.067 29.4675 117.217 27.4472 114.224 27.4472C111.222 27.4472 109.371 29.4675 109.371 32.7811C109.371 36.1136 111.212 38.1245 114.224 38.1245ZM114.224 36.3213C112.459 36.3213 111.467 35.028 111.467 32.7811C111.467 30.5532 112.459 29.2504 114.224 29.2504C115.98 29.2504 116.981 30.5532 116.981 32.7811C116.981 35.0185 115.98 36.3213 114.224 36.3213Z" fill="white"/>
+                                <path d="M120.642 37.9262H122.672V31.856C122.672 30.4116 123.757 29.4392 125.296 29.4392C125.655 29.4392 126.259 29.5053 126.429 29.5619V27.5605C126.212 27.5039 125.825 27.4756 125.523 27.4756C124.182 27.4756 123.04 28.2119 122.747 29.222H122.596V27.6455H120.642V37.9262Z" fill="white"/>
+                                <path d="M131.469 29.1748C132.97 29.1748 133.952 30.2227 133.999 31.8371H128.807C128.92 30.2322 129.968 29.1748 131.469 29.1748ZM133.989 35.1507C133.612 35.9532 132.772 36.3969 131.544 36.3969C129.92 36.3969 128.873 35.2546 128.807 33.4514V33.3381H136.066V32.6301C136.066 29.4014 134.339 27.4472 131.478 27.4472C128.58 27.4472 126.739 29.5336 126.739 32.8189C126.739 36.1042 128.542 38.1245 131.488 38.1245C133.838 38.1245 135.481 36.9916 135.944 35.1507H133.989Z" fill="white"/>
+                                <path d="M90.9079 34.1297C91.0644 36.6542 93.1682 38.2687 96.2993 38.2687C99.6457 38.2687 101.74 36.5759 101.74 33.8753C101.74 31.752 100.546 30.5778 97.6496 29.9027L96.0938 29.521C94.2543 29.0905 93.5106 28.5132 93.5106 27.5054C93.5106 26.2333 94.6653 25.4016 96.3972 25.4016C98.041 25.4016 99.1761 26.2138 99.3815 27.5152H101.515C101.387 25.1374 99.2935 23.4642 96.4265 23.4642C93.3443 23.4642 91.2895 25.1374 91.2895 27.6521C91.2895 29.7265 92.4539 30.9594 95.0077 31.5563L96.8277 31.9966C98.6966 32.4369 99.5185 33.0827 99.5185 34.1591C99.5185 35.4115 98.2269 36.3215 96.4657 36.3215C94.5772 36.3215 93.266 35.4702 93.0801 34.1297H90.9079Z" fill="white"/>
+                                <path d="M69.8821 27.4756C68.4849 27.4756 67.2765 28.1742 66.6534 29.3448H66.5024V27.6455H64.5482V41.3437H66.5779V36.3685H66.7384C67.2765 37.4542 68.4377 38.0962 69.901 38.0962C72.4971 38.0962 74.1492 36.0476 74.1492 32.7811C74.1492 29.5147 72.4971 27.4756 69.8821 27.4756ZM69.3062 36.2741C67.6069 36.2741 66.5402 34.9336 66.5402 32.7906C66.5402 30.6381 67.6069 29.2976 69.3157 29.2976C71.0339 29.2976 72.0629 30.6098 72.0629 32.7811C72.0629 34.9619 71.0339 36.2741 69.3062 36.2741Z" fill="white"/>
+                                <path d="M81.2515 27.4756C79.8543 27.4756 78.6459 28.1742 78.0229 29.3448H77.8718V27.6455H75.9176V41.3437H77.9473V36.3685H78.1078C78.6459 37.4542 79.8071 38.0962 81.2704 38.0962C83.8666 38.0962 85.5187 36.0476 85.5187 32.7811C85.5187 29.5147 83.8666 27.4756 81.2515 27.4756ZM80.6757 36.2741C78.9764 36.2741 77.9096 34.9336 77.9096 32.7906C77.9096 30.6381 78.9764 29.2976 80.6851 29.2976C82.4033 29.2976 83.4323 30.6098 83.4323 32.7811C83.4323 34.9619 82.4033 36.2741 80.6757 36.2741Z" fill="white"/>
+                                <path d="M60.9066 37.9262H63.2353L58.1374 23.8067H55.7793L50.6814 37.9262H52.9319L54.2333 34.1786H59.615L60.9066 37.9262ZM56.8458 26.3703H57.0122L59.0572 32.3391H54.791L56.8458 26.3703Z" fill="white"/>
+                                <path d="M52.0466 13.1559V19.9673H54.5058C56.5355 19.9673 57.7109 18.7164 57.7109 16.5404C57.7109 14.3974 56.5261 13.1559 54.5058 13.1559H52.0466ZM53.1039 14.1189H54.3878C55.7992 14.1189 56.6347 15.0157 56.6347 16.5545C56.6347 18.1169 55.8133 19.0044 54.3878 19.0044H53.1039V14.1189Z" fill="white"/>
+                                <path d="M61.3106 20.0664C62.8116 20.0664 63.7321 19.061 63.7321 17.3947C63.7321 15.7379 62.8069 14.7278 61.3106 14.7278C59.8095 14.7278 58.8843 15.7379 58.8843 17.3947C58.8843 19.061 59.8048 20.0664 61.3106 20.0664ZM61.3106 19.1648C60.4279 19.1648 59.9322 18.5182 59.9322 17.3947C59.9322 16.2808 60.4279 15.6294 61.3106 15.6294C62.1885 15.6294 62.6889 16.2808 62.6889 17.3947C62.6889 18.5134 62.1885 19.1648 61.3106 19.1648Z" fill="white"/>
+                                <path d="M71.5705 14.8269H70.5557L69.6399 18.7495H69.5597L68.5024 14.8269H67.53L66.4727 18.7495H66.3971L65.4767 14.8269H64.4477L65.8637 19.9673H66.9069L67.9643 16.1816H68.0445L69.1066 19.9673H70.1592L71.5705 14.8269Z" fill="white"/>
+                                <path d="M72.7393 19.9673H73.7541V16.9605C73.7541 16.158 74.2309 15.6577 74.9814 15.6577C75.7319 15.6577 76.0907 16.0683 76.0907 16.8944V19.9673H77.1055V16.6395C77.1055 15.4169 76.473 14.7278 75.326 14.7278C74.5519 14.7278 74.0421 15.0724 73.7919 15.6435H73.7164V14.8269H72.7393V19.9673Z" fill="white"/>
+                                <path d="M78.7038 19.9673H79.7187V12.8208H78.7038V19.9673Z" fill="white"/>
+                                <path d="M83.5355 20.0664C85.0365 20.0664 85.957 19.061 85.957 17.3947C85.957 15.7379 85.0318 14.7278 83.5355 14.7278C82.0344 14.7278 81.1093 15.7379 81.1093 17.3947C81.1093 19.061 82.0297 20.0664 83.5355 20.0664ZM83.5355 19.1648C82.6528 19.1648 82.1572 18.5182 82.1572 17.3947C82.1572 16.2808 82.6528 15.6294 83.5355 15.6294C84.4134 15.6294 84.9138 16.2808 84.9138 17.3947C84.9138 18.5134 84.4134 19.1648 83.5355 19.1648Z" fill="white"/>
+                                <path d="M88.9808 19.1979C88.4285 19.1979 88.0273 18.9288 88.0273 18.4662C88.0273 18.0131 88.3483 17.7724 89.0563 17.7252L90.3119 17.6449V18.0745C90.3119 18.7117 89.7455 19.1979 88.9808 19.1979ZM88.7212 20.0523C89.3962 20.0523 89.9579 19.7596 90.2647 19.2451H90.3449V19.9673H91.322V16.4554C91.322 15.3697 90.5951 14.7278 89.3065 14.7278C88.1406 14.7278 87.3098 15.2942 87.206 16.1769H88.1878C88.3011 15.8135 88.6928 15.6058 89.2593 15.6058C89.9531 15.6058 90.3119 15.9126 90.3119 16.4554V16.8991L88.9194 16.9794C87.6969 17.0549 87.0077 17.5883 87.0077 18.5134C87.0077 19.4528 87.7299 20.0523 88.7212 20.0523Z" fill="white"/>
+                                <path d="M94.7659 20.0523C95.474 20.0523 96.0734 19.7171 96.3803 19.1554H96.4605V19.9673H97.4329V12.8208H96.418V15.6435H96.3425C96.064 15.0771 95.4693 14.7419 94.7659 14.7419C93.4679 14.7419 92.6324 15.771 92.6324 17.3947C92.6324 19.0232 93.4584 20.0523 94.7659 20.0523ZM95.0539 15.653C95.9035 15.653 96.4369 16.328 96.4369 17.3995C96.4369 18.4757 95.9082 19.1412 95.0539 19.1412C94.1948 19.1412 93.6803 18.4851 93.6803 17.3947C93.6803 16.3138 94.1995 15.653 95.0539 15.653Z" fill="white"/>
+                                <path d="M104.014 20.0664C105.515 20.0664 106.435 19.061 106.435 17.3947C106.435 15.7379 105.51 14.7278 104.014 14.7278C102.513 14.7278 101.588 15.7379 101.588 17.3947C101.588 19.061 102.508 20.0664 104.014 20.0664ZM104.014 19.1648C103.131 19.1648 102.636 18.5182 102.636 17.3947C102.636 16.2808 103.131 15.6294 104.014 15.6294C104.892 15.6294 105.392 16.2808 105.392 17.3947C105.392 18.5134 104.892 19.1648 104.014 19.1648Z" fill="white"/>
+                                <path d="M107.779 19.9673H108.794V16.9605C108.794 16.158 109.27 15.6577 110.021 15.6577C110.771 15.6577 111.13 16.0683 111.13 16.8944V19.9673H112.145V16.6395C112.145 15.4169 111.513 14.7278 110.365 14.7278C109.591 14.7278 109.082 15.0724 108.831 15.6435H108.756V14.8269H107.779V19.9673Z" fill="white"/>
+                                <path d="M116.819 13.5477V14.8505H116.002V15.7049H116.819V18.6078C116.819 19.5991 117.267 19.9956 118.396 19.9956C118.594 19.9956 118.783 19.972 118.948 19.9437V19.0988C118.806 19.1129 118.717 19.1224 118.561 19.1224C118.056 19.1224 117.834 18.8863 117.834 18.3482V15.7049H118.948V14.8505H117.834V13.5477H116.819Z" fill="white"/>
+                                <path d="M120.31 19.9673H121.325V16.9652C121.325 16.1864 121.788 15.6624 122.618 15.6624C123.336 15.6624 123.718 16.0778 123.718 16.8991V19.9673H124.733V16.6489C124.733 15.4264 124.058 14.7325 122.963 14.7325C122.189 14.7325 121.646 15.0771 121.396 15.653H121.316V12.8208H120.31V19.9673Z" fill="white"/>
+                                <path d="M128.394 15.5916C129.145 15.5916 129.635 16.1155 129.659 16.9227H127.063C127.12 16.1203 127.644 15.5916 128.394 15.5916ZM129.654 18.5795C129.466 18.9808 129.045 19.2026 128.432 19.2026C127.62 19.2026 127.096 18.6315 127.063 17.7299V17.6732H130.693V17.3192C130.693 15.7049 129.829 14.7278 128.399 14.7278C126.95 14.7278 126.029 15.771 126.029 17.4136C126.029 19.0563 126.931 20.0664 128.404 20.0664C129.579 20.0664 130.4 19.5 130.631 18.5795H129.654Z" fill="white"/>
+                                <path d="M39.6681 26.3369C39.6927 24.4251 40.7194 22.6161 42.3482 21.6148C41.3207 20.1473 39.5996 19.2168 37.809 19.1608C35.8992 18.9604 34.0477 20.3036 33.0745 20.3036C32.0825 20.3036 30.5841 19.1807 28.9706 19.2139C26.8674 19.2819 24.9067 20.4776 23.8835 22.3163C21.6839 26.1245 23.3246 31.7213 25.4316 34.7995C26.4858 36.3068 27.7178 37.9906 29.3299 37.9309C30.9074 37.8654 31.4965 36.9249 33.4007 36.9249C35.2872 36.9249 35.84 37.9309 37.4848 37.8929C39.1775 37.8654 40.2441 36.3789 41.2612 34.8573C42.0187 33.7832 42.6015 32.5962 42.9881 31.3401C40.9989 30.4988 39.6704 28.4968 39.6681 26.3369Z" fill="white"/>
+                                <path d="M36.5613 17.1364C37.4843 16.0284 37.939 14.6043 37.8289 13.1665C36.4188 13.3146 35.1163 13.9885 34.1809 15.054C33.2662 16.095 32.7901 17.4941 32.8801 18.8769C34.2907 18.8914 35.6774 18.2358 36.5613 17.1364Z" fill="white"/>
+                            </svg>
+                        </button>
+                        <button class="btn__ch-play">
+                            <svg width="177" height="52" viewBox="0 0 177 52" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect width="176.534" height="51.9912" rx="10" fill="#161415"/>
+                                <path d="M88.9905 27.9871C86.3155 27.9871 84.1353 30.0217 84.1353 32.8241C84.1353 35.6093 86.3155 37.661 88.9905 37.661C91.6665 37.661 93.8468 35.6093 93.8468 32.8241C93.8456 30.0217 91.6654 27.9871 88.9905 27.9871ZM88.9905 35.7572C87.5245 35.7572 86.2609 34.5482 86.2609 32.8252C86.2609 31.084 87.5256 29.8932 88.9905 29.8932C90.4565 29.8932 91.72 31.084 91.72 32.8252C91.72 34.5471 90.4565 35.7572 88.9905 35.7572ZM78.3976 27.9871C75.7226 27.9871 73.5424 30.0217 73.5424 32.8241C73.5424 35.6093 75.7226 37.661 78.3976 37.661C81.0737 37.661 83.2539 35.6093 83.2539 32.8241C83.2539 30.0217 81.0737 27.9871 78.3976 27.9871ZM78.3976 35.7572C76.9316 35.7572 75.668 34.5482 75.668 32.8252C75.668 31.084 76.9327 29.8932 78.3976 29.8932C79.8636 29.8932 81.1271 31.084 81.1271 32.8252C81.1283 34.5471 79.8636 35.7572 78.3976 35.7572ZM65.7985 29.4724V31.5241H70.7094C70.5627 32.6785 70.1783 33.5212 69.5914 34.1069C68.8772 34.8212 67.7592 35.6093 65.7985 35.6093C62.7755 35.6093 60.4122 33.1721 60.4122 30.1491C60.4122 27.1262 62.7755 24.6889 65.7985 24.6889C67.4294 24.6889 68.6202 25.3303 69.4993 26.1549L70.9471 24.7071C69.7188 23.5345 68.089 22.6372 65.7985 22.6372C61.6576 22.6372 58.1763 26.0082 58.1763 30.1491C58.1763 34.2901 61.6576 37.661 65.7985 37.661C68.0333 37.661 69.7199 36.9275 71.0381 35.5536C72.3937 34.1979 72.8157 32.2918 72.8157 30.753C72.8157 30.2776 72.7793 29.8375 72.7054 29.4713H65.7985V29.4724ZM117.328 31.0658C116.925 29.9853 115.697 27.9871 113.187 27.9871C110.695 27.9871 108.624 29.9478 108.624 32.8241C108.624 35.5354 110.677 37.661 113.424 37.661C115.641 37.661 116.924 36.3054 117.456 35.5172L115.807 34.4174C115.258 35.2238 114.506 35.7549 113.424 35.7549C112.344 35.7549 111.574 35.2602 111.079 34.2889L117.547 31.614L117.328 31.0658ZM110.731 32.6785C110.677 30.8088 112.179 29.8568 113.261 29.8568C114.103 29.8568 114.818 30.2788 115.056 30.8827L110.731 32.6785ZM105.473 37.3687H107.598V23.1513H105.473V37.3687ZM101.991 29.0687H101.918C101.442 28.5 100.525 27.9871 99.3718 27.9871C96.9528 27.9871 94.7361 30.1127 94.7361 32.8434C94.7361 35.5547 96.9528 37.6622 99.3718 37.6622C100.526 37.6622 101.442 37.1492 101.918 36.5635H101.991V37.2596C101.991 39.11 101.002 40.0994 99.4082 40.0994C98.1071 40.0994 97.3008 39.1657 96.9709 38.3775L95.1205 39.1475C95.6517 40.4292 97.0619 42.0055 99.4082 42.0055C101.9 42.0055 104.007 40.5396 104.007 36.9661V28.2817H101.992V29.0687H101.991ZM99.5549 35.7572C98.0889 35.7572 96.8618 34.5289 96.8618 32.8434C96.8618 31.1386 98.0889 29.8932 99.5549 29.8932C101.002 29.8932 102.138 31.1386 102.138 32.8434C102.138 34.5289 101.002 35.7572 99.5549 35.7572ZM127.284 23.1513H122.199V37.3687H124.32V31.9825H127.282C129.634 31.9825 131.948 30.2799 131.948 27.5674C131.948 24.855 129.636 23.1513 127.284 23.1513ZM127.338 30.0035H124.32V25.1302H127.338C128.925 25.1302 129.825 26.4438 129.825 27.5674C129.825 28.6683 128.925 30.0035 127.338 30.0035ZM140.454 27.9621C138.917 27.9621 137.326 28.6388 136.668 30.1389L138.551 30.9248C138.953 30.1389 139.704 29.8819 140.49 29.8819C141.587 29.8819 142.703 30.5404 142.721 31.7106V31.8574C142.337 31.6379 141.514 31.3092 140.508 31.3092C138.478 31.3092 136.41 32.4249 136.41 34.5096C136.41 36.4123 138.075 37.6371 139.941 37.6371C141.367 37.6371 142.154 36.9968 142.647 36.2462H142.72V37.3437H144.77V31.8926C144.771 29.3701 142.885 27.9621 140.454 27.9621ZM140.197 35.7538C139.503 35.7538 138.533 35.4058 138.533 34.5459C138.533 33.4484 139.741 33.0276 140.783 33.0276C141.715 33.0276 142.155 33.2289 142.721 33.503C142.556 34.8212 141.423 35.7538 140.197 35.7538ZM152.233 28.2726L149.8 34.4368H149.727L147.202 28.2726H144.916L148.702 36.8877L146.544 41.6803H148.757L154.593 28.2726H152.233ZM133.119 37.3687H135.24V23.1513H133.119V37.3687Z" fill="white"/>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M92.7126 10.9858C91.6965 10.9858 90.844 11.3389 90.16 12.0426C89.4753 12.7459 89.1341 13.6081 89.1341 14.6235C89.1341 15.6389 89.4753 16.5011 90.16 17.2044C90.844 17.9081 91.6966 18.26 92.7126 18.26C93.7288 18.26 94.5814 17.9081 95.2665 17.2043C95.95 16.5011 96.2923 15.639 96.2923 14.6235C96.2923 13.6135 95.9487 12.7537 95.262 12.0472C94.5747 11.3402 93.7233 10.9858 92.7126 10.9858ZM90.1736 14.6235C90.1736 13.8466 90.4211 13.2127 90.9102 12.7158C91.4013 12.2191 92.0003 11.9707 92.7126 11.9707C93.4251 11.9707 94.0252 12.2181 94.5151 12.7158C95.0053 13.2126 95.2528 13.8466 95.2528 14.6235C95.2528 15.4004 95.0053 16.0344 94.5151 16.5312C94.0251 17.0278 93.425 17.2763 92.7126 17.2763C92.0003 17.2763 91.4014 17.029 90.9103 16.5313C90.4211 16.0344 90.1736 15.4005 90.1736 14.6235Z" fill="white"/>
+                                <path d="M62.0737 10.9881C61.0702 10.9881 60.2136 11.3365 59.5117 12.0337C58.8082 12.7303 58.4565 13.5952 58.4565 14.6246C58.4565 15.6529 58.8082 16.5178 59.5117 17.2155C60.2136 17.9115 61.0702 18.26 62.0737 18.26C63.119 18.26 63.9755 17.9171 64.6321 17.2283C65.213 16.6459 65.4999 15.8677 65.4999 14.8998C65.4999 14.7306 65.4847 14.5543 65.4497 14.3711L65.4385 14.3124H62.0004V15.2768H64.4711C64.4114 15.8166 64.2281 16.2339 63.9276 16.5355C63.4337 17.0293 62.8167 17.2762 62.0726 17.2762C61.3728 17.2762 60.7697 17.0312 60.2586 16.539C59.7501 16.0492 59.4949 15.4126 59.4949 14.6235C59.4949 13.8343 59.7501 13.1977 60.2586 12.7079C60.7697 12.2157 61.3728 11.9707 62.0726 11.9707C62.8493 11.9707 63.4499 12.233 63.8858 12.7545L63.9365 12.8152L64.6384 12.112L64.5959 12.0613C64.3213 11.734 63.9554 11.4741 63.5022 11.2794C63.0496 11.0855 62.5725 10.9881 62.0737 10.9881Z" fill="white"/>
+                                <path d="M70.743 11.1394H66.6146V18.1076H70.743V17.1239H67.6358V15.1052H70.4382V14.1407H67.6358V12.122H70.743V11.1394Z" fill="white"/>
+                                <path d="M76.3463 11.1394H71.5128V12.122H73.4189V18.1076H74.4402V12.122H76.3463V11.1394Z" fill="white"/>
+                                <path d="M80.6157 11.1394H79.5945V18.1076H80.6157V11.1394Z" fill="white"/>
+                                <path d="M86.4105 11.1394H81.577V12.122H83.4831V18.1076H84.5044V12.122H86.4105V11.1394Z" fill="white"/>
+                                <path d="M98.5575 11.1394H97.3785V18.1076H98.3975L98.3975 13.7842L98.3657 12.6708L101.755 18.1076H102.783V11.1394H101.762V15.2047L101.762 15.2067L101.793 16.3184L98.5575 11.1394Z" fill="white"/>
+                                <g filter="url(#filter0_ii_2_74)">
+                                <path d="M23.3679 11.8219C23.037 12.1722 22.8414 12.7158 22.8414 13.4198V38.5725C22.8414 39.2776 23.037 39.8201 23.3679 40.1704L23.4521 40.2523L37.5422 26.1622V25.9962V25.8301L23.4521 11.7389L23.3679 11.8219Z" fill="url(#paint0_linear_2_74)"/>
+                                <path d="M42.2375 30.8606L37.5416 26.1623V25.9963V25.8303L42.2386 21.1332L42.3444 21.1935L47.9093 24.3552C49.4981 25.2582 49.4981 26.7356 47.9093 27.6397L42.3444 30.8014L42.2375 30.8606Z" fill="url(#paint1_linear_2_74)"/>
+                                <g filter="url(#filter1_i_2_74)">
+                                <path d="M42.3448 30.8011L37.5409 25.9971L23.3677 40.1713C23.8909 40.7263 24.7564 40.7946 25.7311 40.2418L42.3448 30.8011Z" fill="url(#paint2_linear_2_74)"/>
+                                </g>
+                                <path d="M42.3448 21.1925L25.7311 11.7528C24.7564 11.199 23.8909 11.2683 23.3677 11.8233L37.542 25.9976L42.3448 21.1925Z" fill="url(#paint3_linear_2_74)"/>
+                                </g>
+                                <defs>
+                                <filter id="filter0_ii_2_74" x="22.8414" y="11.3706" width="26.2595" height="29.2531" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                                <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+                                <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                                <feOffset dy="-0.15"/>
+                                <feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1"/>
+                                <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.12 0"/>
+                                <feBlend mode="normal" in2="shape" result="effect1_innerShadow_2_74"/>
+                                <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                                <feOffset dy="0.15"/>
+                                <feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1"/>
+                                <feColorMatrix type="matrix" values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.25 0"/>
+                                <feBlend mode="normal" in2="effect1_innerShadow_2_74" result="effect2_innerShadow_2_74"/>
+                                </filter>
+                                <filter id="filter1_i_2_74" x="23.3677" y="25.9971" width="18.9771" height="14.6266" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                                <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+                                <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                                <feOffset dy="-0.15"/>
+                                <feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1"/>
+                                <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.08 0"/>
+                                <feBlend mode="normal" in2="shape" result="effect1_innerShadow_2_74"/>
+                                </filter>
+                                <linearGradient id="paint0_linear_2_74" x1="36.2932" y1="13.1537" x2="17.2069" y2="32.24" gradientUnits="userSpaceOnUse">
+                                <stop stop-color="#00A0FF"/>
+                                <stop offset="0.0066" stop-color="#00A1FF"/>
+                                <stop offset="0.2601" stop-color="#00BEFF"/>
+                                <stop offset="0.5122" stop-color="#00D2FF"/>
+                                <stop offset="0.7604" stop-color="#00DFFF"/>
+                                <stop offset="1" stop-color="#00E3FF"/>
+                                </linearGradient>
+                                <linearGradient id="paint1_linear_2_74" x1="49.9774" y1="25.9963" x2="22.4593" y2="25.9963" gradientUnits="userSpaceOnUse">
+                                <stop stop-color="#FFE000"/>
+                                <stop offset="0.4087" stop-color="#FFBD00"/>
+                                <stop offset="0.7754" stop-color="#FFA500"/>
+                                <stop offset="1" stop-color="#FF9C00"/>
+                                </linearGradient>
+                                <linearGradient id="paint2_linear_2_74" x1="39.736" y1="28.6059" x2="13.8526" y2="54.4893" gradientUnits="userSpaceOnUse">
+                                <stop stop-color="#FF3A44"/>
+                                <stop offset="1" stop-color="#C31162"/>
+                                </linearGradient>
+                                <linearGradient id="paint3_linear_2_74" x1="19.7982" y1="3.45026" x2="31.3558" y2="15.0079" gradientUnits="userSpaceOnUse">
+                                <stop stop-color="#32A071"/>
+                                <stop offset="0.0685" stop-color="#2DA771"/>
+                                <stop offset="0.4762" stop-color="#15CF74"/>
+                                <stop offset="0.8009" stop-color="#06E775"/>
+                                <stop offset="1" stop-color="#00F076"/>
+                                </linearGradient>
+                                </defs>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="cta__phone">
+                    <img src="imgs/phone.png" alt="">
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer" id="footer">
+        <div class="footer__container">
+            <div class="container grid">
+                <div class="footer__tavern">
+                    <a href="#home" class="footer__logo">Tav<span>ern</span></a>
+                    <p class="footer__text">
+                        Food order now super easy for everyone. <br> Let's order your food through our website and enjoy your ordering.
+                    </p>
+                    <div class="footer__media">
+                        <div class="footer__media-card">
+                            <svg width="8" height="15" viewBox="0 0 8 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M5.19709 15V8.16893H7.56641L7.9186 5.49434H5.19709V3.79074C5.19709 3.01895 5.41817 2.49053 6.55698 2.49053H8V0.105991C7.29789 0.0328054 6.59216 -0.00253208 5.88603 0.000140994C3.79177 0.000140994 2.3539 1.24367 2.3539 3.52653V5.48934H0V8.16392H2.35904V15H5.19709Z" fill="#061210"/>
+                            </svg>
+                        </div>
+                        <div class="footer__media-card">
+                            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1.65892 3.31783C2.57511 3.31783 3.31783 2.57511 3.31783 1.65892C3.31783 0.742722 2.57511 0 1.65892 0C0.742722 0 0 0.742722 0 1.65892C0 2.57511 0.742722 3.31783 1.65892 3.31783Z" fill="#061210"/>
+                                <path d="M4.88433 4.57462V13.7783H7.74195V9.22687C7.74195 8.0259 7.96789 6.86284 9.45697 6.86284C10.9256 6.86284 10.9438 8.23592 10.9438 9.30269V13.779H13.8029V8.73177C13.8029 6.2525 13.2691 4.34717 10.3713 4.34717C8.98007 4.34717 8.0475 5.11066 7.66613 5.83322H7.62746V4.57462H4.88433V4.57462ZM0.227539 4.57462H3.0897V13.7783H0.227539V4.57462Z" fill="#061210"/>
+                            </svg> 
+                        </div>
+                        <div class="footer__media-card">
+                            <svg width="16" height="12" viewBox="0 0 16 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M14.3562 2.9906C14.3668 3.12217 14.3668 3.25298 14.3668 3.38379C14.3668 7.38704 11.067 12 5.03643 12C3.17851 12 1.45247 11.5031 0 10.64C0.26379 10.6678 0.51781 10.6776 0.792184 10.6776C2.26826 10.6809 3.70254 10.2251 4.86383 9.38379C4.17946 9.37235 3.51604 9.16386 2.9662 8.78742C2.41636 8.41099 2.00756 7.8854 1.79687 7.28405C1.99959 7.31187 2.20313 7.33066 2.41645 7.33066C2.71036 7.33066 3.0059 7.29307 3.28028 7.22767C2.53756 7.0892 1.86971 6.71746 1.39029 6.17568C0.91086 5.6339 0.649455 4.9555 0.650519 4.25586V4.21827C1.08773 4.44305 1.59495 4.58364 2.1323 4.60243C1.68214 4.32621 1.31302 3.9514 1.05788 3.51143C0.802735 3.07146 0.6695 2.58002 0.670059 2.08094C0.670059 1.51861 0.832078 1.00288 1.11622 0.553314C1.94027 1.4893 2.96805 2.25503 4.13298 2.8009C5.29792 3.34677 6.57404 3.66061 7.87869 3.72209C7.82821 3.49655 7.79727 3.26275 7.79727 3.02819C7.79706 2.63047 7.88174 2.23661 8.04647 1.86912C8.2112 1.50163 8.45276 1.16773 8.75733 0.886496C9.0619 0.605264 9.42351 0.382216 9.82149 0.230105C10.2195 0.0779944 10.646 -0.000197253 11.0767 3.73685e-07C12.0212 3.73685e-07 12.8736 0.365368 13.4728 0.956271C14.207 0.825173 14.9111 0.577689 15.5538 0.224784C15.3091 0.924558 14.7965 1.51793 14.1119 1.89375C14.7631 1.82517 15.3995 1.66705 16 1.42463C15.5515 2.02839 14.9957 2.55783 14.3562 2.9906Z" fill="#061210"/>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="footer__company">
+                    <div class="footer__title">Company</div>
+                    <a href="#">Home</a>
+                    <a href="#">About Us</a>
+                    <a href="#">Contact Us</a>
+                </div>
+    
+                <div class="footer__feautures">
+                    <div class="footer__title">Feautures</div>
+                    <a href="#">Blog</a>
+                    <a href="#">Support</a>
+                    <a href="#">Privacy</a>
+                    <a href="#">Security</a>
+                </div>
+    
+                <div class="footer__support">
+                    <div class="footer__title">Support</div>
+                    <div class="footer__layouts">
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M15.701 12.2067L13.0528 9.54364C12.6522 9.14018 11.9999 9.14018 11.5983 9.54158L9.24492 11.8936L4.10885 6.76049L6.46528 4.40545C6.86589 4.00507 6.86692 3.35522 6.46631 2.95382L3.8161 0.301054C3.41446 -0.100351 2.76423 -0.100351 2.36259 0.301054L0.00410885 2.65713L0 2.65405C0 10.0251 5.97838 16 13.3538 16L15.6989 13.6562C16.0995 13.2559 16.1005 12.6081 15.701 12.2067Z" fill="#33A593"/>
+                        </svg>
+                        <p>+880 1706 499 216</p>
+                    </div>
+                    <div class="footer__layouts">
+                        <svg width="17" height="12" viewBox="0 0 17 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M1.84615 0H14.7692C15.2589 0 15.7284 0.194505 16.0747 0.540726C16.4209 0.886947 16.6154 1.35652 16.6154 1.84615V10.1538C16.6154 10.6435 16.4209 11.1131 16.0747 11.4593C15.7284 11.8055 15.2589 12 14.7692 12H1.84615C1.35652 12 0.886947 11.8055 0.540726 11.4593C0.194505 11.1131 0 10.6435 0 10.1538V1.84615C0 1.35652 0.194505 0.886947 0.540726 0.540726C0.886947 0.194505 1.35652 0 1.84615 0ZM13.9791 1.69846L8.30769 4.752L2.63631 1.69846C2.55617 1.65345 2.46788 1.62485 2.37657 1.61433C2.28527 1.6038 2.19278 1.61156 2.1045 1.63716C2.01623 1.66275 1.93393 1.70566 1.86242 1.7634C1.7909 1.82113 1.7316 1.89252 1.68797 1.97342C1.64434 2.05431 1.61725 2.14308 1.60828 2.23455C1.59932 2.32602 1.60866 2.41837 1.63575 2.50619C1.66285 2.59401 1.70716 2.67556 1.76611 2.74608C1.82505 2.8166 1.89745 2.87468 1.97908 2.91692L7.97908 6.14769C8.184 6.25846 8.43139 6.25846 8.63631 6.14769L14.6363 2.91692C14.7946 2.82801 14.9117 2.68047 14.9622 2.50609C15.0128 2.33171 14.9928 2.14444 14.9066 1.98464C14.8204 1.82484 14.6749 1.7053 14.5014 1.65177C14.3279 1.59824 14.1403 1.61501 13.9791 1.69846Z" fill="#33A593"/>
+                        </svg>
+                        <a href="#">email@gmail.com</a>
+                    </div>
+                    <div class="footer__layouts">
+                        <svg width="13" height="18" viewBox="0 0 13 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M6.5 0C2.91107 0 0 2.8215 0 6.3C0 11.025 6.5 18 6.5 18C6.5 18 13 11.025 13 6.3C13 2.8215 10.0889 0 6.5 0ZM6.5 8.55C5.21857 8.55 4.17857 7.542 4.17857 6.3C4.17857 5.058 5.21857 4.05 6.5 4.05C7.78143 4.05 8.82143 5.058 8.82143 6.3C8.82143 7.542 7.78143 8.55 6.5 8.55Z" fill="#33A593"/>
+                        </svg>
+                        <p>4/5 Seddon Park, Hamilton New Zealand.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__service">
+                <p class="container">© Copyright 2022 webdesign.gdn All Rights Reserved</p>
+            </div>
+        </div>
+
+    </footer>
+    
+    <script src="js/scrollreveal.min.js"></script>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>

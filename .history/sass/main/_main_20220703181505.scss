@@ -629,10 +629,6 @@
 
 @media screen and (max-width: 320px) {
     .menu {
-        .swiper {
-            height: 210px;
-        }
-
         &__name, &__price {
             font-size: 8px;
         }
@@ -644,6 +640,7 @@
 }
 
 @media screen and (min-width: 340px) {
+    
     .about__heading, .menu__title {
         font-size: 2rem;
     }

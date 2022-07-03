@@ -622,7 +622,18 @@ h1, h2, h3 {
   width: 100%;
 }
 
-@media screen and (max-width: 340px) {
+@media screen and (max-width: 320px) {
+  .menu .swiper {
+    height: 210px;
+  }
+  .menu__name, .menu__price {
+    font-size: 8px;
+  }
+  .menu__time, .menu__type {
+    font-size: 6px;
+  }
+}
+@media screen and (min-width: 340px) {
   .about__heading, .menu__title {
     font-size: 2rem;
   }

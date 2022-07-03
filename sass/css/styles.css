@@ -197,8 +197,36 @@ h1, h2, h3 {
   color: var(--bg-color);
 }
 
+.scrollup {
+  position: fixed;
+  right: 1rem;
+  bottom: -20%;
+  background-color: var(--heading-color);
+  padding: 0.5rem;
+  display: flex;
+  opacity: 0.9;
+  z-index: var(--z-tooltip);
+  transition: 0.4s ease-out;
+}
+.scrollup:hover {
+  background-color: var(--green-color);
+  opacity: 1;
+}
+.scrollup__icon {
+  color: var(--bg-color);
+  font-size: 1.2rem;
+}
+
+.show-scroll {
+  bottom: 20%;
+}
+
 .show-menu {
   right: 0;
+}
+
+.scroll-header .active-link {
+  color: var(--green-color);
 }
 
 .active-link {
@@ -340,12 +368,19 @@ h1, h2, h3 {
   height: 270px;
 }
 .menu__card {
-  width: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
   border: 1px solid #ECECEC;
   border-radius: 8px;
 }
 .menu__card:hover {
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.07);
+}
+.menu .swiper-slide .menu__card {
+  visibility: visible;
+  opacity: 1 !important;
+  transform: none !important;
 }
 .menu__card img {
   border-radius: 8px 8px 0 0;
@@ -436,6 +471,11 @@ h1, h2, h3 {
 }
 .testimonial .swiper-button-disabled svg path {
   stroke: var(--heading-color);
+}
+.swiper-slide .testimonial__man, .swiper-slide .testimonial__layouts {
+  visibility: visible;
+  transform: none !important;
+  opacity: 1 !important;
 }
 .testimonial__card {
   display: grid;
@@ -582,6 +622,33 @@ h1, h2, h3 {
   width: 100%;
 }
 
+@media screen and (max-width: 340px) {
+  .about__heading, .menu__title {
+    font-size: 2rem;
+  }
+
+  .about__text, .menu__text {
+    font-size: 10px;
+  }
+
+  .menu__name, .menu__price {
+    font-size: 10px;
+  }
+  .menu__time, .menu__type {
+    font-size: 8px;
+  }
+}
+@media screen and (min-width: 475px) {
+  .menu .swiper {
+    height: 310px;
+  }
+  .menu__name, .menu__price {
+    font-size: 1rem;
+  }
+  .menu__type, .menu__time {
+    font-size: 0.75rem;
+  }
+}
 @media screen and (min-width: 576px) {
   .home__subtext {
     font-size: var(--h3-font-size);
@@ -798,6 +865,7 @@ h1, h2, h3 {
     justify-content: center;
     align-items: center;
     flex-direction: row;
+    gap: 5rem;
   }
   .cta__phone img {
     max-width: 120%;
@@ -813,6 +881,88 @@ h1, h2, h3 {
   }
   .footer__company a, .footer__feautures a, .footer__support a, .footer p {
     font-size: 12px;
+  }
+}
+@media screen and (min-width: 992px) {
+  .container {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .home__container {
+    display: flex;
+    gap: 0;
+  }
+  .home__images {
+    display: flex;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+  }
+  .home__images-two {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .home__img1 {
+    width: 283px;
+    height: 353px;
+  }
+  .home__heading > h2 {
+    font-size: 3rem;
+  }
+  .home__subtext {
+    font-size: var(--h2-font-size);
+    padding: 1rem 6.25rem 1.5rem 0;
+  }
+  .home__order-btn {
+    font-size: 1rem;
+    padding: 1.5rem 2.5rem;
+  }
+  .home__event {
+    font-size: 1.25rem;
+  }
+
+  .about__text {
+    padding: 0 18rem;
+  }
+  .about__card {
+    width: 485px;
+  }
+  .about__category {
+    font: 1.25rem;
+  }
+  .about__description {
+    font-size: 1rem;
+  }
+
+  .menu .swiper {
+    height: 320px;
+  }
+  .menu__name, .menu__price {
+    font-size: 1rem;
+  }
+  .menu__type, .menu__time {
+    font-size: 0.75rem;
+  }
+  .menu__text {
+    font-size: 1rem;
+  }
+
+  .testimonial__text {
+    padding: 0.75rem 0 1.5rem;
+  }
+
+  .cta__phone img {
+    position: relative;
+    transform: translateY(4rem);
+  }
+
+  .footer__tavearn {
+    margin-right: 2rem;
+  }
+  .footer .grid {
+    display: grid;
+    grid-template-columns: 30% 15% 13% 13% 20%;
   }
 }
 @media screen and (min-width: 1023px) {
@@ -908,6 +1058,7 @@ h1, h2, h3 {
   }
 
   .cta__phone img {
+    width: 110%;
     position: relative;
     transform: translateY(4.5rem);
   }
